@@ -11,10 +11,16 @@
 #Some example leap years are 1600, 1712, and 2016.
 #Write a program that takes in a year and determines whether that year is a leap year.
   
+  
 input_year = int(input())
 
-if not(input_year % 100)  and not(input_year % 400) :
-    print(input_year, "- leap year")
+if not(input_year % 100): 
+    if not(input_year % 400) :
+            print(input_year, "- leap year")
+    else:
+        print(input_year, "- not a leap year")
+
+    
 else:
     if (input_year % 4) == 0:
         print(input_year, "- leap year")
