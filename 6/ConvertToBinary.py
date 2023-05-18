@@ -7,3 +7,5 @@ while x > 0:
     y = (x % 2)
     x //= 2
     print(int(y), end='')
+print()
+
