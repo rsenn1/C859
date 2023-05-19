@@ -1,6 +1,6 @@
 WGU C859: Introduction to Programming in Python
 
-Exercises from zyBook
+Exercises from zyBook <br>
 zyBook ISBN: 978-1-394-12517-3
 
 Organized by chapter number
