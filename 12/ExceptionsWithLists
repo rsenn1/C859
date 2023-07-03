@@ -1,0 +1,24 @@
+#12.9 LAB: Exceptions with lists
+
+#Given a list of 10 names, complete the program that outputs the name specified by the list index entered by the user. 
+#Use a try block to output the name and an except block to catch any IndexError. 
+#Output the message from the exception object if an IndexError is caught. 
+#Output the first element in the list if the invalid index is negative or the last element if the invalid index is positive.
+
+#Note: Python allows using a negative index to access a list, as long as the magnitude of the index 
+#is smaller than the size of the list.
+
+names = ['Ryley', 'Edan', 'Reagan', 'Henry', 'Caius', 'Jane', 'Guto', 'Sonya', 'Tyrese', 'Johnny']
+index = int(input())
+
+try:
+    print(F"Name: {names[index]}")
+    
+except IndexError:   
+    print("Exception! list index out of range")
+    if index < 0:
+        closest = names[0]
+    elif index > 9:
+        closest = names[-1]
+    print(f"The closest name is: {closest}")
+
